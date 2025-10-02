@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 origins = [
     # "https://www.google.com",
     # "https://www.youtube.com",
-    '*',
+    "*",
 ]
 
 app = FastAPI()
@@ -30,5 +30,3 @@ app.include_router(vote.router)
 @app.get("/")
 async def root():
     return {"message": "Hello world!"}
-
-
